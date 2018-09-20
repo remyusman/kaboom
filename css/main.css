@@ -14,8 +14,20 @@
   font-family: "Combat", sans-serif;
   font-size: 300px;
 }
+.whx {
+  font-family: "Happy Times at the IKOB", sans-serif;
+  font-size: 600px;
+  color: #FF80CA;
+}
+.crktxt {
+  font-family: "Bluu Next", sans-serif;
+  color: gold;
+}
 .Lack {
   font-family: "Lack", sans-serif;
+}
+.Lack-Line {
+  font-family: "Lack Line", sans-serif;
 }
 .re-txt {
   overflow: hidden;
@@ -27,7 +39,7 @@
 
 /* Header Link Style */
 .a {
-  font-family: "Lack";
+  font-family: "Lack", "Helvetica";
   text-decoration: none;
   color: black;
 }
@@ -56,11 +68,20 @@
 .bg--pink {
   background-color: #E80CA9;
 }
+.bg-l-pink {
+  background: #FF80CA;
+}
 .bg--blue {
   background-color: #694DE8;
 }
+.bg--dark-blue {
+  background-color: #0B0D9A;
+}
+.bg--light-blue {
+  background-color: #3437E7;
+}
 .bg--orange {
-  background-color: #FFAA19;
+  background-color: #f57029;
 }
 .bg--green {
   background-color: #CCC908;
@@ -90,6 +111,21 @@
   border-left: 10px solid gold;
 }
 
+/* Thumbnail Page */
+.all-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 30px;
+}
+.thumb-kaboom {
+  background-image: url(/images/kaboom-img.jpg);
+  background-position: right;
+}
+.thumb-bam {
+  background-image: url(/images/bam-img.jpg);
+  background-position: bottom right;
+}
+
 /* Animation KABOOM */
 @keyframes KABOOMUP {
   0% {top: -200px;}
@@ -103,6 +139,40 @@
     animation-direction: alternate-reverse;
 }
 
+@keyframes WHOOSH {
+0% {right: -2000px;}
+100% {right: 4000px;}
+}
+.whx {
+  position: relative;
+  animation-name: WHOOSH;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes CRACK {
+0% {opacity: 0; font-size: 0px;}
+15% {opacity: 100; font-size: 70px;}
+100% {opacity: 0; font-size: 90px;}
+}
+.crack {
+  position: relative;
+  animation-name: CRACK;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.crack2 {
+  position: relative;
+  animation-name: CRACK;
+  animation-duration: 4s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+/* Next Arrow Animation */
 @keyframes NEXTARW {
   0% {left: 0px;}
   100% {left: 20px;}
