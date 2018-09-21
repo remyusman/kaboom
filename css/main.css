@@ -23,6 +23,16 @@
   font-family: "Bluu Next", sans-serif;
   color: gold;
 }
+.bong {
+  font-size: 400px;
+  font-family: "Lineal", serif;
+}
+.bong2 {
+  font-size: 400px;
+  font-family: "Lineal", serif;
+  -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+}
 .Lack {
   font-family: "Lack", sans-serif;
 }
@@ -53,6 +63,10 @@
 }
 .a2:hover {
   font-family: "Lack Line";
+}
+.prev {
+  text-decoration: none;
+  color: gold;
 }
 
 /* Color Rules */
@@ -115,6 +129,9 @@
   top: 40%;
   right: 5%;
 }
+.bongbx {
+  bottom: 15%;
+}
 
 /* Thumbnail Page */
 .all-grid {
@@ -136,6 +153,10 @@
 }
 .thumb-crack {
   background-image: url(/images/crack-img.jpg);
+  background-position: center;
+}
+.thumb-bong {
+  background-image: url(/images/bong-img.jpg);
   background-position: center;
 }
 .ckdiv {
@@ -170,6 +191,23 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: normal;
+}
+
+@keyframes BONG {
+  0% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
+  16.67% {top: 20%; bottom: 20px; left: 8%; right: 20px;}
+  33.33% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
+  50% {top: 20%; bottom: 20px; left: 8%; right: 20px;}
+  66.67% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
+  83.34% {top: 20%; bottom: 20px; left: 8%; right: 20px;}
+  100% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
+}
+.bong {
+  position: relative;
+  animation-name: BONG;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes CRACK {
