@@ -3,127 +3,160 @@
  * ======================================== */
 
 /* Typography Rules */
+
 .type {
   font-family: "Helvetica", sans-serif;
 }
+
 .kaboom {
   font-family: "Savate", sans-serif;
   font-size: 100px;
 }
+
 .bamm {
   font-family: "Combat", sans-serif;
   font-size: 300px;
 }
+
 .whx {
   font-family: "Happy Times at the IKOB", sans-serif;
   font-size: 600px;
   color: #FF80CA;
 }
+
 .mmm {
-  font-size:100px;
+  font-size: 100px;
 }
+
 .crktxt {
   font-family: "Bluu Next", sans-serif;
   color: gold;
 }
+
 .spang {
   font-family: "Terminal Grotesque", serif;
   font-size: 200px;
 }
+
 .bong {
   font-size: 400px;
   font-family: "Lineal", serif;
 }
+
 .bong2 {
   font-size: 400px;
   font-family: "Lineal", serif;
   -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
 }
+
 .Lack {
   font-family: "Lack", sans-serif;
 }
+
 .Lack-Line {
   font-family: "Lack Line", sans-serif;
 }
+
 .re-txt {
   overflow: hidden;
 }
+
 .caption {
   position: absolute;
   left: 8%;
 }
 
 /* Header Link Style */
+
 .a {
   font-family: "Lack", "Helvetica";
   text-decoration: none;
   color: black;
 }
+
 .a:hover {
   font-family: "Lack Line";
 }
+
 .a2 {
   font-family: "Lack";
   text-decoration: none;
   color: gold;
 }
+
 .a2:hover {
   font-family: "Lack Line";
 }
+
 .prev {
   text-decoration: none;
   color: gold;
 }
 
 /* Color Rules */
+
 .bg--purple {
   background-color: #350848;
 }
+
 .bg--black {
   background-color: black;
 }
+
 .bg--violet {
   background-color: #7E03A3;
 }
+
 .bg--pink {
   background-color: #E80CA9;
 }
+
 .bg-l-pink {
   background: #FF80CA;
 }
+
 .bg--blue {
   background-color: #694DE8;
 }
+
 .bg--dark-blue {
   background-color: #0B0D9A;
 }
+
 .bg--light-blue {
   background-color: #3437E7;
 }
+
 .bg--orange {
   background-color: #f57029;
 }
+
 .bg--green {
   background-color: #CCC908;
 }
+
 .bg--dark-green {
   background-color: #26873D;
 }
+
 .bg--dark-pink {
   background-color: #D93882;
 }
 
 /* Layout Rules */
+
 .frame {
   overflow-y: hidden;
 }
+
 .nav-grid {
   font-family: "Lack", sans-serif;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 30px;
 }
+
 .arrow-right {
   width: 0;
   height: 0;
@@ -131,67 +164,98 @@
   border-bottom: 10px solid transparent;
   border-left: 10px solid gold;
 }
+
 .bambx {
   position: fixed;
   top: 40%;
   right: 5%;
 }
+
 .bongbx {
   bottom: 15%;
 }
 
 /* Thumbnail Page */
+
 .all-grid {
   display: grid;
   grid-template-columns: 20%;
   grid-gap: 30px;
 }
+
 .thumb-kaboom {
   background-image: url(/images/kaboom-img.jpg);
   background-position: right;
 }
+
 .thumb-bam {
   background-image: url(/images/bam-img.jpg);
   background-position: bottom right;
 }
+
 .thumb-whoosh {
   background-image: url(/images/wsh-img.jpg);
   background-position: bottom right;
 }
+
 .thumb-crack {
   background-image: url(/images/crack-img.jpg);
   background-position: center;
 }
+
 .thumb-bong {
   background-image: url(/images/bong-img.jpg);
   background-position: center;
 }
+
+.thumb-mmm {
+  background-image: url(/images/mmm-img.jpg);
+  background-position: top right;
+}
+
+.thumb-spang {
+  background-image: url(/images/spang-img.jpg);
+  background-position: top left;
+}
+
 .ckdiv {
   position: fixed;
   top: 55%;
   left: 5%;
 }
+
 .x-wrap {
   overflow-x: hidden;
 }
 
 /* Animation KABOOM */
+
 @keyframes KABOOMUP {
-  0% {top: -200px;}
-  100% {top: 0px;}
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0px;
+  }
 }
+
 .kaboom {
   position: relative;
-    animation-name: KABOOMUP;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+  animation-name: KABOOMUP;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes MM {
-  0% {right: 0px;}
-  100% {right: 500px;}
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 500px;
+  }
 }
+
 .mm {
   position: relative;
   animation-name: MM;
@@ -203,9 +267,14 @@
 }
 
 @keyframes M2M {
-  0% {right: 800px;}
-  100% {right: 300px;}
+  0% {
+    right: 800px;
+  }
+  100% {
+    right: 300px;
+  }
 }
+
 .m2m {
   position: relative;
   animation-name: M2M;
@@ -217,9 +286,14 @@
 }
 
 @keyframes WHOOSH {
-0% {right: -2000px;}
-100% {right: 4000px;}
+  0% {
+    right: -2000px;
+  }
+  100% {
+    right: 4000px;
+  }
 }
+
 .whx {
   position: relative;
   animation-name: WHOOSH;
@@ -229,14 +303,50 @@
 }
 
 @keyframes BONG {
-  0% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
-  16.67% {top: 20%; bottom: 20px; left: 8%; right: 20px;}
-  33.33% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
-  50% {top: 20%; bottom: 20px; left: 8%; right: 20px;}
-  66.67% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
-  83.34% {top: 20%; bottom: 20px; left: 8%; right: 20px;}
-  100% {top: 10%; bottom: 10px; left: 5%; right: 10px;}
+  0% {
+    top: 10%;
+    bottom: 10px;
+    left: 5%;
+    right: 10px;
+  }
+  16.67% {
+    top: 20%;
+    bottom: 20px;
+    left: 8%;
+    right: 20px;
+  }
+  33.33% {
+    top: 10%;
+    bottom: 10px;
+    left: 5%;
+    right: 10px;
+  }
+  50% {
+    top: 20%;
+    bottom: 20px;
+    left: 8%;
+    right: 20px;
+  }
+  66.67% {
+    top: 10%;
+    bottom: 10px;
+    left: 5%;
+    right: 10px;
+  }
+  83.34% {
+    top: 20%;
+    bottom: 20px;
+    left: 8%;
+    right: 20px;
+  }
+  100% {
+    top: 10%;
+    bottom: 10px;
+    left: 5%;
+    right: 10px;
+  }
 }
+
 .bong {
   position: relative;
   animation-name: BONG;
@@ -246,10 +356,20 @@
 }
 
 @keyframes CRACK {
-0% {opacity: 0; font-size: 0px;}
-15% {opacity: 100; font-size: 50px;}
-100% {opacity: 0; font-size: 70px;}
+  0% {
+    opacity: 0;
+    font-size: 0px;
+  }
+  15% {
+    opacity: 100;
+    font-size: 50px;
+  }
+  100% {
+    opacity: 0;
+    font-size: 70px;
+  }
 }
+
 .crack {
   position: relative;
   animation-name: CRACK;
@@ -257,6 +377,7 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
+
 .crack2 {
   position: relative;
   animation-name: CRACK;
@@ -265,6 +386,7 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
+
 .crack3 {
   position: relative;
   animation-name: CRACK;
@@ -273,6 +395,7 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
+
 .crack4 {
   position: relative;
   animation-name: CRACK;
@@ -281,6 +404,7 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
+
 .crack5 {
   position: relative;
   animation-name: CRACK;
@@ -289,6 +413,7 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
+
 .crack6 {
   position: relative;
   animation-name: CRACK;
@@ -297,6 +422,7 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
+
 .crack7 {
   position: relative;
   animation-name: CRACK;
@@ -306,11 +432,60 @@
   animation-direction: normal;
 }
 
-/* Next Arrow Animation */
-@keyframes NEXTARW {
-  0% {left: 0px;}
-  100% {left: 20px;}
+@keyframes SPANG {
+  0% {
+    top: 0px;
+    right: -2500px;
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  50% {
+    top: 200px;
+    right: 0px;
+    transform: rotate(15deg)
+  }
+  60% {
+    transform: rotate(-40deg)
+  }
+  100% {
+    top: 1000px;
+    right: -1500px;
+    transform: rotate(-20deg);
+  }
 }
+
+.spang {
+  position: relative;
+  animation-name: SPANG;
+  animation-duration: 2s;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+/* Pop-Up Code */
+
+figcaption {
+  display: none;
+}
+figure:hover figcaption {
+  display: block;
+}
+
+/* Next Arrow Animation */
+
+@keyframes NEXTARW {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
 .next {
   position: relative;
   display: inline;
