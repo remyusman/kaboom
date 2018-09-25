@@ -164,14 +164,15 @@
   border-bottom: 10px solid transparent;
   border-left: 10px solid gold;
 }
-
 .bambx {
   position: fixed;
   top: 40%;
   right: 5%;
 }
-
 .bongbx {
+  bottom: 15%;
+}
+.spangbx {
   bottom: 15%;
 }
 
@@ -216,6 +217,10 @@
 .thumb-spang {
   background-image: url(/images/spang-img.jpg);
   background-position: top left;
+}
+.thumb-ulp {
+  background-image: url(/images/ulp-img.jpg);
+  background-position: top right;
 }
 
 .ckdiv {
