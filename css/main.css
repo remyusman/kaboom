@@ -2,6 +2,47 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+/* Fonts */
+@font-face {
+  font-family: "Savate";
+  src: url(/fonts/savate-regular.otf);
+}
+
+@font-face {
+  font-family: "Combat";
+  src: url(/fonts/combat.otf);
+}
+
+@font-face {
+  font-family: "Happy Times at the IKOB";
+  src: url(/fonts/happy-times-at-the-ikob.otf);
+}
+
+@font-face {
+  font-family: "Bluu Next";
+  src: url(/fonts/BluuNext-Bold.otf);
+}
+
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url(/fonts/terminal-grotesque.ttf);
+}
+
+@font-face {
+  font-family: "Lineal";
+  src: url(/fonts/Lineal.otf);
+}
+
+@font-face {
+  font-family: "Lack";
+  src: url(/fonts/Lack-Regular.otf);
+}
+
+@font-face {
+  font-family: "Lack Line";
+  src: url(/fonts/Lack-Line-Regular.otf);
+}
+
 /* Typography Rules */
 
 .type {
